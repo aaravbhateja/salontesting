@@ -3,175 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Beauty Zone</title>
+    <title>Gallery - Modern Beauty Zone</title>
     <link rel="icon" type="image/x-icon" href="jpeg-01-30.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Pacifico&display=swap" rel="stylesheet">
     <style>
-        /* Mobile First Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
             background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
         header {
             background: #333;
             color: #fff;
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            padding: 20px 0;
             text-align: center;
         }
-        header .logo img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
         header h1 {
-            margin: 10px 0;
-            font-size: 24px;
-            font-family: 'Pacifico', cursive; /* Updated font */
-            color: #fff;
+            margin: 0;
+            font-family: 'Pacifico', cursive;
+            font-size: 28px;
         }
         nav {
-            margin-top: 10px;
+            margin-top: 20px;
         }
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         nav ul li {
-            margin: 5px 0;
+            display: inline;
+            margin: 0 10px;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 14px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         .container {
-            width: 95%;
+            width: 80%;
             margin: 0 auto;
             padding: 20px;
-            padding-bottom: 80px;
-            flex: 1;
         }
-        .services {
-            display: grid;
-            grid-template-columns: 1fr;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
             gap: 15px;
         }
-        .service {
-            background: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .service img {
+        .gallery img {
             width: 100%;
+            max-width: 300px;
+            height: auto;
             border-radius: 8px;
-        }
-        .contact {
-            background: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-top: 20px;
-            text-align: center;
-        }
-        .contact h2 {
-            margin-top: 0;
-            font-size: 18px;
-        }
-        .button {
-            display: inline-block;
-            background: #5cb85c;
-            color: #fff;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-        .button:hover {
-            background: #4cae4c;
         }
         footer {
             background: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            width: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Tablet and Larger Devices */
-        @media (min-width: 600px) {
-            header .logo img {
-                width: 80px;
-                height: 80px;
-            }
-            header h1 {
-                font-size: 30px; /* Adjusted font size for tablets */
-            }
-            nav ul {
-                flex-direction: row;
-            }
-            nav ul li {
-                margin: 0 10px;
-            }
-            nav ul li a {
-                font-size: 16px;
-            }
-            .container {
-                width: 90%;
-            }
-            .services {
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                gap: 20px;
-            }
-        }
-
-        /* Desktop and Larger Devices */
-        @media (min-width: 992px) {
-            header .logo img {
-                width: 100px;
-                height: 100px;
-            }
-            header h1 {
-                font-size: 36px; /* Adjusted font size for desktop */
-            }
-            nav ul {
-                flex-direction: row;
-            }
-            .container {
-                width: 80%;
-            }
         }
     </style>
 </head>
 <body>
-
     <header>
-        <div class="logo">
-            <img src="jpeg-01-30 (1).jpg" alt="Salon Logo">
-        </div>
-        <div class="info">
-            <h1>Modern Beauty Zone</h1>
-        </div>
+        <h1>Modern Beauty Zone</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -184,70 +82,17 @@
     </header>
 
     <div class="container">
-        <div class="services">
-            <div class="service">
-                <img src="https://wallpaperaccess.com/full/4183624.jpg" alt="Threading">
-                <h3>Threading</h3>
-                <p>Eyebrows, Upper Lip, Forehead, Side Look, Full Face, Chin</p>
-            </div>
-            <div class="service">
-                <img src="https://th.bing.com/th/id/OIP.UWe7AJSC8fs_Miz0h7gtSQHaE7?rs=1&pid=ImgDetMain" alt="Waxing">
-                <h3>Waxing</h3>
-                <p>Full Arms, Half Arms, Full Legs, Half Legs, Under Arms, Stomach, Back, Front</p>
-            </div>
-            <div class="service">
-                <img src="https://th.bing.com/th/id/OIP.8YhXOmx2s8zDQkLFRNFKtAHaDp?rs=1&pid=ImgDetMain" alt="Manicure & Pedicure">
-                <h3>Manicure & Pedicure</h3>
-                <p>Normal Manicure, Spa Manicure, Polish Manicure, Normal Pedicure, Spa Pedicure, Polishing Pedicure</p>
-            </div>
-            <div class="service">
-                <img src="https://www.rd.com/wp-content/uploads/2019/06/man-haircut-1-760x506.jpg" alt="Hair Cut">
-                <h3>Hair Cut</h3>
-                <p>Boy Cut, Bob Cut, Layer Cut, U Cut, V Cut, Deep U Cut, Feather Cut, Straight Cut, Butterfly Cut</p>
-            </div>
-            <div class="service">
-                <img src="https://hairstylecamp.com/wp-content/uploads/Hair-smoothening-treatment.jpg" alt="Hair Treatment">
-                <h3>Hair Treatment</h3>
-                <p>Smoothning, Rebonding, Straightening, Keratin, Botox, Nano Plastia, Fiber Plex, Metal DX</p>
-            </div>
-            <div class="service">
-                <img src="https://thumbs.dreamstime.com/b/woman-applying-makeup-27610019.jpg" alt="Makeup">
-                <h3>Makeup</h3>
-                <p>Light Makeup, Party Makeup, Bridal Makeup, Saree Draping</p>
-            </div>
-            <div class="service">
-                <img src="https://i.pinimg.com/originals/fd/34/92/fd34920007d17e7e2f99485a3deba901.jpg" alt="Hair Colours">
-                <h3>Hair Colours</h3>
-                <p>Short Length, Mid Length, Full Length, Rude Touchup</p>
-            </div>
-            <div class="service">
-                <img src="https://th.bing.com/th/id/OIP.0xUl2n4zAk9GWJy10TAvSQHaLH?w=1024&h=1536&rs=1&pid=ImgDetMain" alt="Massage Therapy">
-                <h3>Massage Therapy</h3>
-                <p>Relax and rejuvenate with our therapeutic massages.</p>
-            </div>
-            <div class="service">
-                <img src="https://st2.depositphotos.com/1965665/8295/i/450/depositphotos_82958774-stock-photo-hair-extensions.jpg" alt="Hair Extensions">
-                <h3>Hair Extensions</h3>
-                <p>Add length and volume to your hair with our extensions.</p>
-            </div>
-            <div class="service">
-                <img src="https://www.magicnailsdenver.com/wp-content/uploads/2019/05/magic-nails-enhancements-700x700.jpg" alt="Nail Art">
-                <h3>Nail Art</h3>
-                <p>Express your style with our creative nail designs.</p>
-            </div>
-        </div>
-
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p><strong>Phone:</strong> 8050022309</p>
-            <p><strong>Email:</strong> <a href="mailto:modernbeautyzone00@gmail.com">modernbeautyzone00@gmail.com</a></p>
-            <a href="https://wa.me/+918050022309" class="button" target="_blank">Book Appointment on WhatsApp</a>
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200?text=Salon+Interior" alt="Salon Interior">
+            <img src="https://via.placeholder.com/300x200?text=Makeup" alt="Makeup">
+            <img src="https://via.placeholder.com/300x200?text=Hair+Cut" alt="Hair Cut">
+            <img src="https://via.placeholder.com/300x200?text=Manicure+%26+Pedicure" alt="Manicure & Pedicure">
         </div>
     </div>
 
     <footer>
         <p>&copy; 2024 Modern Beauty Zone. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
